@@ -30,7 +30,7 @@ sudo chown 900:900 /home/vagrant/.kube/config
 
 install_network_cni ()
 {
-kubectl apply -f /vagrant/kube-flannel.yml
+kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
 }
 
 initialize_master_node
