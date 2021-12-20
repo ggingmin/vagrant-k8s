@@ -28,10 +28,10 @@ install_network_cni ()
 kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
 }
 
-install_metrics_server ()
-{
-kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
-}
+# install_metrics_server ()
+# {
+# kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
+# }
 
 install_kubernetes_dashboard ()
 {
@@ -75,7 +75,7 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0/a
 initialize_master_node
 configure_kubectl
 install_network_cni
-install_metrics_server
+# install_metrics_server
 install_kubernetes_dashboard
 create_join_command
 # create_dashboard_user
